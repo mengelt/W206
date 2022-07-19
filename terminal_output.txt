@@ -1,0 +1,52 @@
+        Item        Price    Time to Make
+    sandwich        10.00              10
+       salad         8.00               8
+        soup         6.00              15
+      coffee         5.00               5
+         tea         5.00               5
+
+
+Who is this order for? Albert Einstein
+
+Welcome, Albert Einstein!
+Please enter item you want to purchase:invalid item
+invalid item is not available to purchase. Please enter item you want to purchase:sandwich
+Please enter quantity that you want:invalid quantity
+invalid quantity is not a valid quantity. Please enter quantity that you want:-1
+-1 is not a valid quantity. Please enter quantity that you want:6
+Your cart now has 6 items
+Would you like to order more? (y)es or (n)o:y
+Please enter item you want to purchase:salad
+Please enter quantity that you want:2
+Your cart now has 8 items
+Would you like to order more? (y)es or (n)o:y
+Please enter item you want to purchase:salad
+Please enter quantity that you want:1
+Your cart now has 9 items
+Would you like to order more? (y)es or (n)o:y
+Please enter item you want to purchase:soup
+Please enter quantity that you want:4
+Your cart now has 13 items
+Would you like to order more? (y)es or (n)o:y
+Please enter item you want to purchase:coffee
+Please enter quantity that you want:2
+Your cart now has 15 items
+Would you like to order more? (y)es or (n)o:y
+Please enter item you want to purchase:tea
+Please enter quantity that you want:1
+Your cart now has 16 items
+Would you like to order more? (y)es or (n)o:n
+*************************************************
+Albert Einstein, thanks for your order
+
+Items     qty       Price
+sandwich  6         54.00
+salad     3         21.60
+soup      4         20.40
+coffee    2         10.00
+tea       1         5.00
+
+Tax       $8.05
+Total     $119.05
+2022-07-18,  Your order will be ready in 159 minutes
+***************************************************
