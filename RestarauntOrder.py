@@ -180,26 +180,29 @@ class RestarauntOrder:
         return sandwich_total
 
     def __calculate_subtotal__(self):
+        subtotal_cart = {}
 
         # calculate sandwich total
         if "sandwich" in self.__cart:
-            self.__cart["sandwich"] = self.__get_sandwich_subtotal__()
+            subtotal_cart["sandwich"] = self.__get_sandwich_subtotal__()
             
         # calculate salad total
         if "salad" in self.__cart:
-            self.__cart["salad"] = self.__get_salad_subtotal__()
+            subtotal_cart["salad"] = self.__get_salad_subtotal__()
             
         # calculate salad total
         if "soup" in self.__cart:
-            self.__cart["soup"] = self.__get_soup_subtotal__()
+            subtotal_cart["soup"] = self.__get_soup_subtotal__()
             
         # calculate coffee total
         if "coffee" in self.__cart:
-            self.__cart["coffee"] = self.__get_coffee_subtotal__()
+            subtotal_cart["coffee"] = self.__get_coffee_subtotal__()
             
         # calculate tea total
         if "tea" in self.__cart:
-            self.__cart["tea"] = self.__get_tea_subtotal__()
+            subtotal_cart["tea"] = self.__get_tea_subtotal__()
+        
+        self.__cart = subtotal_cart
 
     def __prompt_for_item_and_quantity__(self):  
         # get item type
@@ -239,7 +242,7 @@ class RestarauntOrder:
             else:
                 self.__cart[item] = quantity
             # prompt user if they would like to order more
-            cart_items = len(self.__cart.keys())
+            cart_items = sum(self.__cart.values())
             print(f"Your cart now has {cart_items} item{'' if cart_items == 1 else 's'}")
             is_order_more = input("Would you like to order more? (y)es or (n)o:")
             ## perform a basic validity check for the answer
