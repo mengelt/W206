@@ -1,3 +1,9 @@
+# Cyber 206, Spring 2022 Group Project
+# Restaurant Ordering App
+# Jason Young
+# Mark Mengelt
+# Ali Mirsarraf
+
 from RestarauntOrder import RestarauntOrder
 
 def main():
