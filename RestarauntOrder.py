@@ -1,3 +1,9 @@
+# Cyber 206, Spring 2022 Group Project
+# Restaurant Ordering App. Note: start the application from the order.py file
+# Jason Young
+# Mark Mengelt
+# Ali Mirsarraf
+
 import datetime
 
 class RestarauntOrder:
